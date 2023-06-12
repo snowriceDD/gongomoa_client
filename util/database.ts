@@ -17,3 +17,4 @@ if (process.env.NODE_ENV === 'development') { //개발 단계와 배포 단계 �
     connectDB = new MongoClient(url, options).connect()
 }
 export { connectDB }
+//123
