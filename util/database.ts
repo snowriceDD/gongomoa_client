@@ -3,6 +3,9 @@ import { MongoClient } from "mongodb";
 interface MongoClientOptions {
     useNewUrlParser?: boolean;
   }
+declare global {
+    var _mongo: any;
+}
 
 const url:any = process.env.DB_CONN_STRING;
 const options:any = { useNewUrlParser: true }
@@ -17,4 +20,3 @@ if (process.env.NODE_ENV === 'development') { //개발 단계와 배포 단계 �
     connectDB = new MongoClient(url, options).connect()
 }
 export { connectDB }
-//123
