@@ -1,14 +1,8 @@
 import './globals.css'
-import { DefaultSeo } from "next-seo";
 import { Inter } from 'next/font/google'
 import Navbar from '../components/navbar';
 
 const inter = Inter({ subsets: ['latin'] })
-
-// const metadata = {
-//   title: '공고모아',
-//   description: '신입 개발자를 위한 채용 공고를 모아봅니다.',
-// }
 
 export const metadata = {
   title: '공고모아 :: 채용사이트 너무 많다',
