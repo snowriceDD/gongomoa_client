@@ -15,7 +15,7 @@ export default async function NewBE() {
     return (
         <div className="list-bg">
           <div className="list-block">
-          <h1>신입 백엔드 공고 모음</h1>
+          <h1>신입 백엔드 공고 모음 - {`${result.length}건`}</h1>
           <p>update : 2023.06.19</p>
           {result.map((v:GetDB, i:number) => {
             if (v.href[1] === 'w') {
