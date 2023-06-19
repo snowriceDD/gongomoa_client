@@ -7,9 +7,9 @@ import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  googleSiteVerification: 'Qmysrt2LIDVJ3uhNPgpUVvfDPsODHWNQQ-EBtFhGPpg',
   title: '공고모아 :: 채용사이트 너무 많다',
   description: '신입 개발자를 위한 채용 공고를 모아봅니다.',
+  // googleSiteVerification: 'Qmysrt2LIDVJ3uhNPgpUVvfDPsODHWNQQ-EBtFhGPpg',
   canonical: 'https://gongomoa.vercel.app/',
   openGraph: {
     type: "website",
@@ -40,6 +40,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-site-verification" content="Qmysrt2LIDVJ3uhNPgpUVvfDPsODHWNQQ-EBtFhGPpg" />
+      </head>
       <body className={inter.className}>
         <Navbar/>
         {children}
