@@ -7,8 +7,7 @@ import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  name: "google-site-verification",
-  content: "Qmysrt2LIDVJ3uhNPgpUVvfDPsODHWNQQ-EBtFhGPpg",
+  googleSiteVerification: 'Qmysrt2LIDVJ3uhNPgpUVvfDPsODHWNQQ-EBtFhGPpg',
   title: '공고모아 :: 채용사이트 너무 많다',
   description: '신입 개발자를 위한 채용 공고를 모아봅니다.',
   canonical: 'https://gongomoa.vercel.app/',
