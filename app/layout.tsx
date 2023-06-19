@@ -43,7 +43,7 @@ export default function RootLayout({
       <head>
         <meta name="google-site-verification" content="Qmysrt2LIDVJ3uhNPgpUVvfDPsODHWNQQ-EBtFhGPpg" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4222604658270407"
-     crossorigin="anonymous"></script>
+     crossOrigin="anonymous"></script>
       </head>
       <body className={inter.className}>
         <Navbar/>
