@@ -7,9 +7,11 @@ import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
+  icons: {
+    icon: './favicon.ico'
+  },
   title: '공고모아 :: 채용사이트 너무 많다',
   description: '신입 개발자를 위한 채용 공고를 모아봅니다.',
-  // googleSiteVerification: 'Qmysrt2LIDVJ3uhNPgpUVvfDPsODHWNQQ-EBtFhGPpg',
   canonical: 'https://gongomoa.vercel.app/',
   openGraph: {
     type: "website",
@@ -19,7 +21,7 @@ export const metadata = {
     site_name: "공고모아",
     images: [
       {
-        url: "#",
+        url: "./favicon.ico",
         width: 285,
         height: 167,
         alt: "이미지"
@@ -39,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="kr">
       <head>
         <meta name="google-site-verification" content="Qmysrt2LIDVJ3uhNPgpUVvfDPsODHWNQQ-EBtFhGPpg" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4222604658270407"
