@@ -38,7 +38,7 @@
 
 ## 사용 설명서
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cd045f67-703e-4d5f-a9ba-27a1e1e2e055/Untitled.png)
+![navigation](./readImg/11.png)
 
 현재 공고모아는 3개의 카테고리 중, **프론트엔드, 백엔드** 직무의 채용공고만 지원하고 있어요.
 
@@ -46,7 +46,7 @@
 
 채용 공고는 아웃링크로, 채용사이트로 연결해드려요.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/441c9058-061d-40f1-ab15-5cc7d373d7c8/Untitled.png)
+![list](./readImg/2.png)
 
 편의를 위한 더 많은 기능을 추가하기 위해 노력해볼게요.
 
