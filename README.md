@@ -1,34 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Gongomoa :: 신입 개발자를 위한 채용 공고
+[공고모아 :: 채용사이트 너무 많다](https://gongomoa.vercel.app/)
 
-## Getting Started
+---
 
-First, run the development server:
+너무 많아져버린 채용 사이트에 지쳐, 신입 개발자에게 맞는 채용 공고를 한 곳에 모아봤어요.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- 현재 프론트엔드, 백엔드만 지원하고 있어요.
+- 추 후, 수요도에 따라 분야를 늘리고자 해요.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+아이디어가 생기는대로 새로운 기능을 업데이트하고 있어요.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Skill** : Typescript, next13, mongodb,cheerio, peppeteer
+그 회사를 검색했을 때, next seo의 장점을 빌어 연관으로 보였으면 좋겠네요.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+---
 
-## Learn More
+## 왜?
 
-To learn more about Next.js, take a look at the following resources:
+> 저는 웹 개발자 구직자에요.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+취업을 위해 `*원**, 사**, 잡***, 프****, 점*, 랠*, ……*` 등 너무 많은 채용공고 사이트를 뒤지고 다니는게 번거로웠어요.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+첫 번째로, 저에게 도움이 되는 도구를 만들고자 했어요.
 
-## Deploy on Vercel
+두 번째로, 저와 같은 위치에 있는 누군가에게도 도움이 될 것 같아 배포하기로 했어요.
+> 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 디자인
+
+기능을 우선시하여, 아직 디자인을 완료하지 못했어요.
+
+어느정도 기능이 나왔으니 사용성을 고려한 UI를 제공하고자 해요.
+
+---
+
+## 사용 설명서
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cd045f67-703e-4d5f-a9ba-27a1e1e2e055/Untitled.png)
+
+현재 공고모아는 3개의 카테고리 중, **프론트엔드, 백엔드** 직무의 채용공고만 지원하고 있어요.
+
+원하는 직무를 누르고, 원하는 공고를 눌러 확인해보세요.
+
+채용 공고는 아웃링크로, 채용사이트로 연결해드려요.
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/441c9058-061d-40f1-ab15-5cc7d373d7c8/Untitled.png)
+
+편의를 위한 더 많은 기능을 추가하기 위해 노력해볼게요.
+
+*찜, 핫한 공고, 좋아요, 싫어요 등~*
+
+version 2.0에서 봐요!
+
+---
+
+## Change Log
+
+### V. 1.0.0
+
+> MVP 초기 모델
+프론트엔드, 백엔드 직무의 채용 공고 지원 중.
+>
