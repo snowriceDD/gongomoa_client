@@ -16,7 +16,7 @@ export default async function NewFE() {
         <div className="list-bg">
           <div className="list-block">
           <h1>신입 프론트엔드 공고 모음 - {`${result.length}건`}</h1>
-          <p>update : 2023.06.19</p>
+          <p>update : 2023.06.20</p>
           {result.map((v:GetDB, i:number) => {
             if (v.href[1] === 'w') {
             return (
