@@ -1,7 +1,20 @@
+html {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 14px;
+  width: 100vw;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 .list-bg {
+  box-sizing: border-box;
   background: rgb(249, 250, 255);
-  padding: 10px;
-  margin-top: 40px;
+  margin-top: 50px;
+  width: 100vw;
 }
 
 .list-block {
@@ -13,19 +26,18 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  gap: 5px;
 }
 
 .list-item {
-  width: 24em;
+  width: 49%;
+  box-sizing: border-box;
   background: white;
   border-radius: 10px;
   padding: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   box-shadow: rgb(224, 224, 224) 0px 2px 4px 0px;
 }
 .list-item h4 {
-  font-size: 20px;
   font-weight: 800;
   margin: 0;
 }
@@ -57,4 +69,23 @@
   text-decoration: none;
   color: black;
   align-self: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .html {
+    font-size: 10px;
+  }
+  .list-block {
+    width: 90%;
+  }
+  .list-item {
+    width: 90vw;
+  }
+  .list-item h4 {
+    font-size: 1.5rem;
+  }
+  .navbarWrap {
+    width: 90%;
+  }
+
 }
