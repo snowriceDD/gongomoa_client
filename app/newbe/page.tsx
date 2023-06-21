@@ -17,6 +17,7 @@ export default async function NewBE() {
           <div className="list-block">
           <h1>신입 백엔드 공고 모음 - {`${result.length}건`}</h1>
           <p>update : 2023.06.21</p>
+          <div className="list-flex">
           {result.map((v:GetDB, i:number) => {
             if (v.href[1] === 'w') {
             return (
@@ -40,6 +41,7 @@ export default async function NewBE() {
             )
           }
           })}
+          </div>
           </div>
         </div>
       )
