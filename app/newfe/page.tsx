@@ -1,3 +1,4 @@
+import PostReview from "@/components/postReview";
 import { connectDB } from "../../util/database";
 
 interface GetDB {
@@ -27,6 +28,7 @@ export default async function NewFE() {
                     <h4>{v.name}</h4>
                     <p>{v.title}</p>
                   </a>
+                  {/* <button><PostReview /></button> */}
                 </div>
             )
           } else if (v.href[1] === 'j') {
