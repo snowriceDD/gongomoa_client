@@ -23,11 +23,11 @@ export default function Tracker({
     });
     
     
-    function mouseMover(e) {
+    function mouseMover(e:any) {
         console.log('x:',e.clientX, 'y:',e.clientY, 'url:', window.location.pathname)
         // let pathGroup = {x: e.clientX, y: e.clientY, url: window.location}
     }
-    function mouseClicker(e) {
+    function mouseClicker() {
         console.log(window.location.href);
     }
 
