@@ -1,4 +1,6 @@
-export default async function NewETC() {
+export default async function NewETC() {    
+
+  
     return (
         <div className="list-bg">
           <div className="list-block">

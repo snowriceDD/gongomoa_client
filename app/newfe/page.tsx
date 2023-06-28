@@ -1,5 +1,5 @@
-import PostReview from "@/components/postReview";
 import { connectDB } from "../../util/database";
+import Link from "next/link";
 
 interface GetDB {
   _id: undefined;
@@ -11,10 +11,11 @@ interface GetDB {
 export default async function NewFE() {
 
     const db = (await connectDB).db('forum');
-    let result = await db.collection('newFE').find().toArray();  
-    
+    let result = await db.collection('newFE').find().toArray();
+    let getReview = await db.collection('post').find().toArray();  
+
     return (
-        <div className="list-bg">
+      <div className="list-bg">
           <div className="list-block">
           <h1>신입 프론트엔드 공고 모음 - {`${result.length}건`}</h1>
           <p>update : 2023.06.24</p>
@@ -28,7 +29,7 @@ export default async function NewFE() {
                     <h4>{v.name}</h4>
                     <p>{v.title}</p>
                   </a>
-                  {/* <button><PostReview /></button> */}
+                  <Link prefetch={false} href={`/pages/${v.name}`}>리뷰</Link>
                 </div>
             )
           } else if (v.href[1] === 'j') {
@@ -39,6 +40,7 @@ export default async function NewFE() {
                     <h4>{v.name}</h4>
                     <p>{v.title}</p>
                   </a>
+                  <Link prefetch={false} href={`/pages/${v.name}`}>리뷰</Link>
                 </div>
             )
           }

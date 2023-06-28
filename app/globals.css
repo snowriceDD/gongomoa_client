@@ -15,10 +15,13 @@ html {
   background: rgb(249, 250, 255);
   margin-top: 50px;
   width: 100vw;
+  min-height: 100vh;
+  height: auto;
 }
 
 .list-block {
   width: 60vw;
+  padding: 5px;
   margin: 0 auto;
 }
 .list-flex {
@@ -47,6 +50,31 @@ html {
 } 
 .list-item a {
   text-decoration-line: none;
+}
+.review-zone {
+  width: 100%;
+  padding-top: 10px;
+}
+.review-card:nth-child(odd) {
+  background-color: #eeeeee;
+}
+.review-card {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+.review-card h4 {
+  border-radius: 3px;
+  padding: 3px;
+  background-color: #111111;
+  color: white;
+}
+.review-card p {
+  padding: 3px;
+}
+.review-card .user_ip {
+  color: #999999;
+  font-size: 0.5rem;
 }
 .navbar {
   background: white;
@@ -88,4 +116,13 @@ html {
     width: 90%;
   }
 
+}
+
+.viewAll {
+  background-color: rgba(0, 255, 255, 0.129);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  /* pointer-events: none; */
+  position: absolute;
 }

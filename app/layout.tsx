@@ -2,6 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Navbar from '../components/navbar';
 import { Analytics } from '@vercel/analytics/react';
+// import Tracker from '@/components/tracker';
  
 
 const inter = Inter({ subsets: ['latin'] })
@@ -48,8 +49,10 @@ export default function RootLayout({
      crossOrigin="anonymous"></script>
       </head>
       <body className={inter.className}>
+        {/* <Tracker> */}
         <Navbar/>
         {children}
+        {/* </Tracker> */}
         <Analytics/>
       </body>
     </html>
