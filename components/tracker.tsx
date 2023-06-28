@@ -1,6 +1,5 @@
 'use client'
 
-import { children } from "cheerio/lib/api/traversing";
 import { useEffect, useState } from "react"
 
 /**
