@@ -1,7 +1,7 @@
 import { connectDB } from "@/util/database";
 
 interface Post {
-    rawHeaders: Array<T>;
+    rawHeaders: any; //수정해라.
     body: any;
     
     title: string

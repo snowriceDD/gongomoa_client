@@ -16,7 +16,6 @@ export default async function Detail(props: { params: { name: string; }; }) {
     const query = { title: decodePath}
     let result = await db.collection('post').find(query).toArray()
     // { title : props.params.name }
-    console.log(result)
     
     if (result.length > 0) {
     return (

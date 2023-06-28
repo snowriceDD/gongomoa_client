@@ -12,7 +12,6 @@ export default async function NewFE() {
 
     const db = (await connectDB).db('forum');
     let result = await db.collection('newFE').find().toArray();
-    let getReview = await db.collection('post').find().toArray();  
 
     return (
       <div className="list-bg">
