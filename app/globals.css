@@ -73,6 +73,9 @@ html {
 .review-card p {
   padding: 3px;
 }
+.review-card .user_na {
+  font-weight: 500;
+}
 .review-card .user_ip {
   color: #999999;
   font-size: 0.5rem;
@@ -134,8 +137,9 @@ html {
   position: absolute;
 }
 #review_component {
-  border: 1px solid black;
+  border: 1px solid rgb(165, 165, 165);
   border-radius: 5px;
+  margin-top: 10px;
 }
 #review_component form {
   display: grid;
@@ -151,10 +155,14 @@ html {
 .user_id { 
   grid-area: user_id;
   padding: 2px;
+  border: 1px solid darkgray;
+  border-radius: 2px;
 }
 .input_pw { 
   grid-area: user_pw;
   padding: 2px;
+  border: 1px solid darkgray;
+  border-radius: 2px;
 }
 .input_content { 
   grid-area: content;
@@ -164,9 +172,19 @@ html {
     line-height: 1;
     vertical-align: top;
     text-align: left;
+    border: 1px solid darkgray;
+    border-radius: 2px;
 }
-.submit { grid-area: submit; }
-.submitUp { grid-area: submitUp; }
+.submit { 
+  grid-area: submit;
+  border: 1px solid darkgray;
+  border-radius: 2px;
+}
+.submitUp { 
+  grid-area: submitUp;
+  border: 1px solid darkgray;
+  border-radius: 2px;
+}
 #review_component .input_text {
   flex: 1;
   height: 100px;
