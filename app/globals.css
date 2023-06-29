@@ -126,3 +126,40 @@ html {
   /* pointer-events: none; */
   position: absolute;
 }
+#review_component {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+#review_component form {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 100px 1fr 100px; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 10px;
+    grid-template-areas: 
+      "user_id content submit"
+      "user_pw content submitUp"
+}
+
+.user_id { 
+  grid-area: user_id;
+  padding: 2px;
+}
+.input_pw { 
+  grid-area: user_pw;
+  padding: 2px;
+}
+.input_content { 
+  grid-area: content;
+    padding: 10px;
+    margin: 0;
+    line-height: 1;
+    vertical-align: top;
+    text-align: left;
+}
+.submit { grid-area: submit; }
+.submitUp { grid-area: submitUp; }
+#review_component .input_text {
+  flex: 1;
+  height: 100px;
+}
