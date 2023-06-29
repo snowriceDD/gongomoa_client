@@ -1,5 +1,6 @@
 import { connectDB } from "@/util/database";
 import { ObjectId } from "mongodb";
+import PostReview from "@/components/postReview";
 
 interface ReviewType {
     _id: undefined;
@@ -13,7 +14,7 @@ interface ReviewType {
 export default async function Detail(props: { params: { name: string; }; }) {
     const db = (await connectDB).db('forum');
     const decodePath = decodeURIComponent(props.params.name);
-    const query = { title: decodePath}
+    const query = { title: decodePath }
     let result = await db.collection('post').find(query).toArray()
     // { title : props.params.name }
     
@@ -21,7 +22,7 @@ export default async function Detail(props: { params: { name: string; }; }) {
     return (
         <div className="list-bg">
             <div className="list-block">
-                <h1>{result[0].title} 리뷰</h1>
+                <h1>{query.title} 리뷰</h1>
                 <section className="review-zone">
                 {result.map((v:ReviewType, i:number) => {
                     return (
@@ -32,6 +33,7 @@ export default async function Detail(props: { params: { name: string; }; }) {
                         </div>
                     )
                 })}
+                <PostReview name={query.title} />
                 </section>
             </div>
         </div>
@@ -40,7 +42,11 @@ export default async function Detail(props: { params: { name: string; }; }) {
         return (
             <div className="list-bg">
             <div className="list-block">
-                <h1>작성된 리뷰가 없습니다</h1>
+                <h1>{query.title}</h1>
+                <section className="review-zone">
+                <h1>아직 작성된 리뷰가 없습니다</h1>
+                <PostReview name={query.title} />
+                </section>
             </div>
             </div>
         )

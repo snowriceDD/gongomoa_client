@@ -22,6 +22,5 @@ export default async function newReview(req: Post, res: any) {
         console.log(e);
     }
 
-    return res.redirect(302, `/${red}`);
-    // return res.redirected;
+    return res.redirect(302, `/pages/${red}`);
 }
