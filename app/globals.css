@@ -151,6 +151,7 @@ html {
 }
 .input_content { 
   grid-area: content;
+    resize: none;
     padding: 10px;
     margin: 0;
     line-height: 1;
