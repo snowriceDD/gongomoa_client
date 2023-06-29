@@ -3,11 +3,12 @@ import { connectDB } from "@/util/database";
 interface Post {
     rawHeaders: any; //수정해라.
     body: any;
-    
     title: string
-    content: string
+    user_id: string
     password: string
-  }
+    content: string
+    likes: number
+}
 
 export default async function newReview(req: Post, res: any) {
     let red;
@@ -16,7 +17,13 @@ export default async function newReview(req: Post, res: any) {
     try { 
         red = (req.rawHeaders[15].split('/').pop());
         await db.collection('post').insertOne(
-            { title: req?.body.name, content: req?.body.content, password: req?.body.password }
+            { 
+                title: req?.body.name, 
+                user_id: req?.body.user_id,
+                password: req?.body.password, 
+                content: req?.body.content,
+                likes: req?.body.likes,
+            }
         );
     } catch(e) {
         console.log(e);

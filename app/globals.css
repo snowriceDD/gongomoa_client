@@ -62,6 +62,7 @@ html {
   display: flex;
   align-items: center;
   padding: 8px;
+  justify-content: space-between;
 }
 .review-card h4 {
   border-radius: 3px;
@@ -76,6 +77,12 @@ html {
   color: #999999;
   font-size: 0.5rem;
 }
+.review-Deletebtn {
+  border: none;
+  background: none;
+  margin-left: auto;
+}
+
 .navbar {
   background: white;
   width: 100vw;

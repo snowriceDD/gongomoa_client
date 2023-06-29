@@ -5,10 +5,12 @@ import PostReview from "@/components/postReview";
 interface ReviewType {
     _id: undefined;
     title: string;
-    content: string;
+    user_id: string;
     password: string;
+    content: string;
     date: Date;
     user_ip: string;
+    likes: number;
 }
 
 export default async function Detail(props: { params: { name: string; }; }) {
@@ -27,9 +29,10 @@ export default async function Detail(props: { params: { name: string; }; }) {
                 {result.map((v:ReviewType, i:number) => {
                     return (
                         <div className="review-card" key={i}>
-                            <p className="user_na">익명%</p>
+                            <p className="user_na">{v.user_id}</p>
                             <p className="user_ip">아이피 지역</p>
                             <p>{v.content}</p>
+                            <button className="review-Deletebtn" type="button">🆇</button>
                         </div>
                     )
                 })}
