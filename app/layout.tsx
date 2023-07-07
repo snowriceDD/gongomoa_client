@@ -49,10 +49,8 @@ export default function RootLayout({
      crossOrigin="anonymous"></script>
       </head>
       <body className={inter.className}>
-        {/* <Tracker> */}
         <Navbar/>
         {children}
-        {/* </Tracker> */}
         <Analytics/>
       </body>
     </html>
