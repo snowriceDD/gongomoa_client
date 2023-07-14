@@ -23,7 +23,7 @@ export default function PostReview(props: PostReviewType) {
                 <input className="input_pw" name="password" type="password" minLength={4}
                     maxLength={8} size={10} placeholder="비밀번호" required/>
                 <textarea className="input_content" name="content" minLength={10}
-                    maxLength={150} placeholder="내용" required />
+                    maxLength={150} placeholder="욕설 및 과도한 비방은 서비스 이용에 제재가 있을 수 있습니다." required />
                 <button className="submit" type="submit" disabled={submitState}>등록</button>
                 <button className="submitUp" type="submit" disabled={submitState}>등록 + 추천</button>
             </form>
