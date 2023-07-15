@@ -1,4 +1,4 @@
-import { connectDB } from "../../util/database";
+import { getList } from "../../util/getList";
 import Link from "next/link";
 
 interface GetDB {
@@ -9,10 +9,7 @@ interface GetDB {
 }
 
 export default async function NewBE() {
-
-    const db = (await connectDB).db('forum');
-    let result = await db.collection('newBE').find().toArray();  
-    
+    const result = await getList('newBE')
     return (
         <div className="list-bg">
           <div className="list-block">
