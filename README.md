@@ -66,7 +66,7 @@ version 2.0에서 봐요!
 
 ### V. 1.0.2
 
-> 리스트 data Caching
-> get db util function
+> 리스트 data Caching<br>
+> get db util function<br>
 
 ---
