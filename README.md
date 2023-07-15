@@ -64,5 +64,9 @@ version 2.0에서 봐요!
 > 프론트엔드, 백엔드 직무의 채용 공고 지원 중.<br>
 > 반응형 웹 적용<br>
 
+### V. 1.0.2
+
+> 리스트 data Caching
+> get db util function
 
 ---
