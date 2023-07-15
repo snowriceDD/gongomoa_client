@@ -1,6 +1,5 @@
-import { connectDB } from "@/util/database";
-import { ObjectId } from "mongodb";
 import PostReview from "@/components/postReview";
+import { getList } from "@/util/getList";
 
 interface ReviewType {
     _id: undefined;
@@ -14,11 +13,9 @@ interface ReviewType {
 }
 
 export default async function Detail(props: { params: { name: string; }; }) {
-    const db = (await connectDB).db('forum');
     const decodePath = decodeURIComponent(props.params.name);
     const query = { title: decodePath }
-    let result = await db.collection('post').find(query).toArray()
-    // { title : props.params.name }
+    let result = await getList('post', query)
     
     if (result.length > 0) {
     return (
