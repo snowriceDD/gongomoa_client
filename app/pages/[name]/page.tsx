@@ -20,12 +20,15 @@ export async function generateMetadata(props: { params: { name: string; }}) {
         title: `공고모아 :: 기업 리뷰 - ${query.title}`,
         description: `${query.title} 기업 채용공고 지원자들의 리뷰입니다.`,
         canonical: `https://gongomoa.vercel.app/pages/${query.title}`,
+        keyword: `${query.title}, 채용공고, 개발자, 신입개발자, 프론트엔드, 백엔드`,
         openGraph: {
             type: "website",
             locale: "ko_KR",
             url: `https://gongomoa.vercel.app/pages/${query.title}`,
             title: `공고모아 :: 기업 리뷰 - ${query.title}`,
             site_name: "공고모아",
+            description: `${query.title} 기업 채용공고 지원자들의 리뷰입니다.`,
+            keyword: `${query.title}, 채용공고, 개발자, 신입개발자, 프론트엔드, 백엔드`,
             images: [
             {
                 url: "./favicon.ico",
@@ -39,6 +42,8 @@ export async function generateMetadata(props: { params: { name: string; }}) {
             handle: '@handle',
             site: '@site',
             cardType: 'summary_large_image',
+            description: `${query.title} 기업 채용공고 지원자들의 리뷰입니다.`,
+            keyword: `${query.title}, 채용공고, 개발자, 신입개발자, 프론트엔드, 백엔드`,
         },
     }
 }
