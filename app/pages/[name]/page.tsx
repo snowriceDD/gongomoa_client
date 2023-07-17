@@ -12,7 +12,38 @@ interface ReviewType {
     likes: number;
 }
 
-export default async function Detail(props: { params: { name: string; }; }) {
+export async function generateMetadata(props: { params: { name: string; }}) {
+    const decodePath = decodeURIComponent(props.params.name);
+    const query = { title: decodePath }
+
+    return {
+        title: `공고모아 :: 기업 리뷰 - ${query.title}`,
+        description: `${query.title} 기업 채용공고 지원자들의 리뷰입니다.`,
+        canonical: `https://gongomoa.vercel.app/pages/${query.title}`,
+        openGraph: {
+            type: "website",
+            locale: "ko_KR",
+            url: `https://gongomoa.vercel.app/pages/${query.title}`,
+            title: `공고모아 :: 기업 리뷰 - ${query.title}`,
+            site_name: "공고모아",
+            images: [
+            {
+                url: "./favicon.ico",
+                width: 285,
+                height: 167,
+                alt: "이미지"
+            }
+            ]
+        },
+        twitter: {
+            handle: '@handle',
+            site: '@site',
+            cardType: 'summary_large_image',
+        },
+    }
+}
+
+export default async function Detail(props: { params: { name: string; }}) {
     const decodePath = decodeURIComponent(props.params.name);
     const query = { title: decodePath }
     let result = await getList('post', query)
