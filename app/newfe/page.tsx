@@ -8,6 +8,35 @@ interface GetDB {
   href: string;
 }
 
+export const metadata = {
+  icons: {
+    icon: './favicon.ico'
+  },
+  title: '공고모아 :: 신입 프론트엔드 공고 모음',
+  description: '신입 개발자를 위한 채용 공고를 모아봅니다.',
+  canonical: 'https://gongomoa.vercel.app/newfe',
+  openGraph: {
+    type: "website",
+    locale: "ko_KR",
+    url: 'https://gongomoa.vercel.app/newfe',
+    title: '공고모아 :: 신입 프론트엔드 공고 모음',
+    site_name: "공고모아",
+    images: [
+      {
+        url: "./favicon.ico",
+        width: 285,
+        height: 167,
+        alt: "이미지"
+      }
+    ]
+  },
+  twitter: {
+      handle: '@handle',
+      site: '@site',
+      cardType: 'summary_large_image',
+  },
+};
+
 export default async function NewFE() {
 
     const result = await getList('newFE')
